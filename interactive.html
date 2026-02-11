@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine’s Interactive 💖</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="background"></div>
+
+<div class="container">
+    <h1>Valentine’s Interactive 💌</h1>
+
+    <div class="cards">
+        <div class="card">
+            <img src="images/hearts.gif" alt="Hearts" class="card-gif">
+            <button onclick="startQuiz()">Take Love Quiz 💖</button>
+        </div>
+
+        <div class="card">
+            <img src="images/flowers.gif" alt="Flowers" class="card-gif">
+            <button onclick="showLetterForm()">Write a Love Letter 💌</button>
+        </div>
+
+        <div class="card">
+            <img src="images/chocolate.gif" alt="Chocolate" class="card-gif">
+            <button onclick="alert('Send chocolates! 🍫')">Send Chocolate 🍫</button>
+        </div>
+
+        <div class="card">
+            <img src="images/gift.gif" alt="Gift" class="card-gif">
+            <button onclick="alert('Send a gift 🎁')">Send Gift 🎁</button>
+        </div>
+    </div>
+
+    <!-- Love Letter Form -->
+    <div id="letterForm" class="letter-form hidden">
+        <input type="text" id="fromName" placeholder="Your Name">
+        <input type="text" id="toName" placeholder="Partner's Name">
+        <textarea id="letterMessage" placeholder="Write your message..." rows="4"></textarea>
+        <button onclick="sendLetter()">Generate Letter 💖</button>
+        <p id="letterOutput"></p>
+        <button onclick="hideLetterForm()">Close ✖</button>
+    </div>
+</div>
+
+<!-- Floating Hearts -->
+<div id="floating-hearts"></div>
+
+<script src="js/interactive.js"></script>
+</body>
+</html>
