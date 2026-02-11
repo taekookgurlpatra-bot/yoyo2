@@ -1,8 +1,8 @@
-/* ===== Reset ===== */
+/* Reset */
 * { margin:0; padding:0; box-sizing:border-box; font-family: 'Arial', sans-serif; }
 body, html { height:100%; overflow:hidden; }
 
-/* ===== Background ===== */
+/* Background */
 .background {
   position: fixed;
   width:100%; height:100%;
@@ -13,33 +13,27 @@ body, html { height:100%; overflow:hidden; }
 }
 @keyframes gradientBG { 0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%} }
 
-/* ===== Container ===== */
+/* Container */
 .container { display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; text-align:center; color:#800000; padding:20px; }
 
-/* ===== Cards ===== */
+/* Cards */
 .cards { display:flex; flex-wrap:wrap; gap:40px; margin-top:30px; justify-content:center; }
-.card { background:rgba(255,255,255,0.9); border-radius:20px; padding:20px; width:220px; box-shadow:0 8px 20px rgba(0,0,0,0.2); display:flex; flex-direction:column; align-items:center; }
+.card { background:rgba(255,255,255,0.9); border-radius:20px; padding:20px; width:220px; box-shadow:0 8px 20px rgba(0,0,0,0.2); display:flex; flex-direction:column; align-items:center; transition:0.3s; }
+.card:hover { transform:scale(1.05); }
 .card-gif { width:100px; border-radius:15px; }
 .card button { margin-top:15px; padding:12px 25px; border-radius:25px; border:none; background:#ff4d6d; color:white; font-weight:bold; cursor:pointer; transition:0.3s; }
 .card button:hover { background:#ff1a3c; transform:scale(1.05); }
 
-/* ===== Letter Form ===== */
+/* Letter Form */
 .letter-form { margin-top:30px; background:rgba(255,255,255,0.95); padding:20px; border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,0.2); display:flex; flex-direction:column; align-items:center; }
 .letter-form input, .letter-form textarea { margin:8px 0; padding:10px; width:80%; border-radius:10px; border:1px solid #ff9999; }
 .letter-form button { margin-top:10px; padding:10px 20px; border-radius:25px; border:none; background:#ff4d6d; color:white; font-weight:bold; cursor:pointer; }
 .hidden { display:none; }
 
-/* ===== Floating Hearts ===== */
+/* Floating Hearts */
 #floating-hearts { position: fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; overflow:visible; z-index:10; }
 .floating-heart { position:absolute; pointer-events:none; animation: floatUp 4s linear forwards; }
 @keyframes floatUp { 0% { transform:translateY(0) scale(1); opacity:1; } 100% { transform:translateY(-400px) scale(1.2); opacity:0; } }
 
-/* ===== Homepage styles ===== */
-header { background:#ff4d6d; padding:20px 0; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
-nav ul { list-style:none; display:flex; justify-content:center; gap:30px; }
-nav ul li a { color:white; text-decoration:none; font-weight:bold; font-size:1.1em; transition:0.3s; }
-nav ul li a:hover { color:#fff7f7; transform:scale(1.1); }
-main { padding:60px 20px; text-align:center; }
+/* Headers & Buttons */
 h1 { font-family:'Brush Script MT',cursive; font-size:3em; margin-bottom:20px; }
-h2 { font-family:'Brush Script MT',cursive; font-size:2em; margin-bottom:15px; }
-button { margin:10px; }
